@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   resources :categories, only: [:only]
-  resources :classified, only: [:new, :create, :index, :show]
+  resources :classifieds, only: [:new, :create, :index, :show]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
