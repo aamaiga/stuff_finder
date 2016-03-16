@@ -1,7 +1,7 @@
 class CreateClassifieds < ActiveRecord::Migration
   def change
     create_table :classifieds do |t|
-      t.string :titles
+      t.string :title
       t.text :description
       t.integer :price
       t.references :category, index: true, foreign_key: true
